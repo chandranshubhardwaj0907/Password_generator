@@ -1,0 +1,89 @@
+body {
+    background-color: rgba(0, 5, 6, 0.413);
+}
+
+section {
+  border: 10px solid rgb(31, 48, 80);
+  height: 96vh;
+}
+.form {
+    display: grid;
+}
+.container {
+    border: 2px solid rgb(26, 22, 95);
+    max-width: 500px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    border-radius: 25px;
+    height: 333px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    
+}
+
+h1 {
+    color: rgb(198, 197, 218);
+    font-family: 'Orelega One', cursive;
+}
+.password-area {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border: 1px solid #333;
+  height: 2rem;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  border-radius: .5rem;
+}
+svg {
+    position: absolute;
+    color: rgb(37, 23, 23);
+    font: bold;
+    right: 20px;
+    cursor: pointer;
+    top: 130px;
+}
+svg:hover {
+    fill:antiquewhite;
+}
+.range {
+    color:wheat;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.include {
+    display: grid;
+    grid-template-columns: auto auto;
+    color: wheat;
+    font-size: 20px;
+}
+.checkbox {
+    display: inline-block;
+    
+}
+
+.generate-password {
+    grid-column: span 1;
+    background-color:transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.generate-password:hover {
+    background-color: rgb(126, 155, 182);
+}

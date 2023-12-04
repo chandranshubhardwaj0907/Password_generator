@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div>
+                <h1>My Password Generator!</h1>
+                <h3 type="text"class="password-area" id="passwordDisplay">Display Password</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16"  id="CopyToClipBoard">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                </svg>
+                    <div class="range">
+                        <label for="">Lenght of Password</label>
+                        <input type="range" min="7" max="50" value="25" id="slider-range" oninput="this.nextElementSibling.value = this.value">
+                        <input type="number" min="7" max="50" value="25" id="slider-number" readonly>
+                    </div>
+                    <div class="include">
+                        <label for="">Include uppercase</label>
+                        <input type ="checkbox" class="checkbox" id="uppercase">
+
+                        <label for="">Include symbols</label>
+                        <input type ="checkbox" class="checkbox" id="symbols">
+
+                        <label for="">Include numbers</label>
+                        <input type ="checkbox" class="checkbox" id="numbers">
+                    </div>
+                    <button type="click" class="generate-password" id = "generate-password">Generate!</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
